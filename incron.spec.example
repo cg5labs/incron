@@ -1,6 +1,6 @@
 # spec file for incron
  
-%define _topdir     /home/rpm/rpmbuild
+%define _topdir     %(echo ${PWD}/rpmbuild)
 %define name        incron
 %define release     0
 %define version     0.6
