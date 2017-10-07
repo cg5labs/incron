@@ -55,12 +55,14 @@ rm -rf ${RPM_BUILD_ROOT}
  
 %files
 %defattr(-,root,root)
+
+%dir /etc/incron.d
+%dir /var/spool/incron
+
 /usr/bin/incrontab
 /usr/sbin/incrond
 /etc/init.d/incrond
 /etc/incron.conf.example
-/etc/incron.d
-/var/spool/incron
  
 %doc %attr(0444,root,root) /usr/local/share/man/man1/incrontab.1
 %doc %attr(0444,root,root) /usr/local/share/man/man5/incron.conf.5
