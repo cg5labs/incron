@@ -33,6 +33,8 @@ make
 install -m 0755 -d ${RPM_BUILD_ROOT}/usr/bin
 install -m 0755 -d ${RPM_BUILD_ROOT}/usr/sbin
 install -m 0755 -d ${RPM_BUILD_ROOT}/etc/init.d
+install -m 0755 -d ${RPM_BUILD_ROOT}/etc/incron.d
+install -m 0755 -d ${RPM_BUILD_ROOT}/var/spool/incron
 
 install -m 0755 incrontab ${RPM_BUILD_ROOT}/usr/bin
 install -m 0755 incrond ${RPM_BUILD_ROOT}/usr/sbin
