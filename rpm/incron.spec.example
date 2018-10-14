@@ -38,7 +38,7 @@ install -m 0755 -d ${RPM_BUILD_ROOT}/var/spool/incron
 
 install -m 0755 incrontab ${RPM_BUILD_ROOT}/usr/bin
 install -m 0755 incrond ${RPM_BUILD_ROOT}/usr/sbin
-install -m 0755 sysv_init ${RPM_BUILD_ROOT}/etc/init.d/incrond
+install -m 0755 rpm/sysv_init ${RPM_BUILD_ROOT}/etc/init.d/incrond
 install -m 0644 incron.conf.example ${RPM_BUILD_ROOT}/etc
 
 install -m 0755 -d ${RPM_BUILD_ROOT}/usr/local/share/man/man1
